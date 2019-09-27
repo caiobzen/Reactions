@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct ReactionSelectionButton: View {
-    let react: React
+    let reaction: Reaction
     let size: CGFloat
     let onChanged: (DragGesture.Value) -> Void
     let onEnded: () -> Void
     
     var body: some View {
-        Image(systemName: react.name)
+        Image(systemName: reaction.name)
             .resizable()
             .aspectRatio(contentMode: .fit)
             .padding(8)
-            .foregroundColor(react.color)
+            .foregroundColor(reaction.color)
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { self.onChanged($0) }

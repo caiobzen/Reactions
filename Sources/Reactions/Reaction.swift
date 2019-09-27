@@ -1,3 +1,5 @@
+import SwiftUI
+
 public struct Reaction: Equatable {
     let name: String
     let color: Color

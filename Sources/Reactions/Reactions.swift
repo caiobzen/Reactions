@@ -42,7 +42,7 @@ public struct Reactions: View {
             .frame(width: reactionSize, height: reactionSize)
             .offset(y: -reactionSize)
             
-            ReactionSelectionButton(react: defaultReaction, size: reactionSize, onChanged: { value in
+            ReactionSelectionButton(reaction: defaultReaction, size: reactionSize, onChanged: { value in
                 withAnimation { self.isDragging = true }
                 self.selectedReaction = self.getSelectedReaction(for: value.translation)
             }, onEnded: {
@@ -56,7 +56,7 @@ public struct Reactions: View {
 }
 
 extension Reactions {
-    func getSelectedReaction(for translation: CGSize) -> React? {
+    func getSelectedReaction(for translation: CGSize) -> Reaction? {
         let iconWidth = reactionSize
         let halfWidth = (iconWidth * CGFloat(reactions.count)) / 2
         let widthTranslation = translation.width + halfWidth

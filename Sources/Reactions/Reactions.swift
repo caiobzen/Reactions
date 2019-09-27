@@ -19,7 +19,7 @@ public struct Reactions: View {
         }
     }
     
-    @State private var selectedReaction: React? = nil {
+    @State private var selectedReaction: Reaction? = nil {
         didSet {
             if selectedReaction != oldValue {
                 UIImpactFeedbackGenerator().impactOccurred()
@@ -27,7 +27,7 @@ public struct Reactions: View {
         }
     }
     
-    private var defaultReaction: React {
+    private var defaultReaction: Reaction {
         selectedReaction ?? reactions.first!
     }
     
@@ -55,7 +55,7 @@ public struct Reactions: View {
     }
 }
 
-extension ReactionsView {
+extension Reactions {
     func getSelectedReaction(for translation: CGSize) -> React? {
         let iconWidth = reactionSize
         let halfWidth = (iconWidth * CGFloat(reactions.count)) / 2

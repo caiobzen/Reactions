@@ -6,9 +6,10 @@ public struct Reactions: View {
     let reactionSize: CGFloat
     let onReactionSelected: (Reaction) -> Void
     
-    public init(reactions: [Reaction], reactionSize: CGFloat = 50) {
+    public init(reactions: [Reaction], reactionSize: CGFloat = 50, onReactionSelected: @escaping (Reaction) -> Void) {
         self.reactions = reactions
         self.reactionSize = reactionSize
+        self.onReactionSelected = onReactionSelected
     }
     
     @State private var isDragging = false {

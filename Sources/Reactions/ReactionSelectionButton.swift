@@ -9,7 +9,6 @@ struct ReactionSelectionButton: View {
     var body: some View {
         Image(systemName: reaction.name)
             .resizable()
-            .aspectRatio(contentMode: .fit)
             .padding(8)
             .foregroundColor(reaction.color)
             .gesture(

@@ -16,7 +16,6 @@ struct ReactionView: View {
     var body: some View {
         Image(systemName: reaction.name)
             .frame(width: iconSize, height: iconSize)
-            .aspectRatio(contentMode: .fit)
             .animation(.spring())
             .scaleEffect(isSelected ? scaledRatio : 1.0)
             .foregroundColor(isSelected ? reaction.color : .black)

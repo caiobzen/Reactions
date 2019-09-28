@@ -3,7 +3,7 @@
 A simple widget to simulate a component used by most of the social network apps to allow users to react to something.
 You can find the sample app [Here](https://github.com/caiobzen/reactions-sample-app)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/72de20a3bcfa58cfa2c6/maintainability)](https://codeclimate.com/github/caiobzen/post-reactions-swiftui/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9c9412cf9e0adfa8c6f9/maintainability)](https://codeclimate.com/github/caiobzen/Reactions/maintainability)
 
 --- 
 

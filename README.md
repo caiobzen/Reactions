@@ -22,7 +22,7 @@ To create your custom widget, all you need to do is to provide an array of `Reac
         Reaction(name: "heart.fill", color: Color(red: 1, green: 0.4, blue: 0.3)),
     ]
     
-    Reactions(reactions: reactions) { reaction in 
+    Reactions(reactions) { reaction in 
         print("this was the selected reaction: \(reaction)")
     }
 ```

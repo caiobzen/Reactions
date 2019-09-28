@@ -38,4 +38,5 @@ I just wanted to play around with `SwiftUI`, but this time, I was specially look
 
 ### 🤓 How to run
 Since this project has zero dependencies on external frameworks, all you need is:
-- `⌘ + R` *(and that's it)*
+1. Add `https://github.com/caiobzen/Reactions.git` to your XCode Project as a Package Dependency
+2. Done! :D
